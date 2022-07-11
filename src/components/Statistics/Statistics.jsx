@@ -1,6 +1,15 @@
+import PropTypes from 'prop-types';
 import React, { Component } from 'react';
 
 class Statistics extends Component {
+  static propTypes = {
+    state: PropTypes.exact({
+      good: PropTypes.number.isRequired,
+      neutral: PropTypes.number.isRequired,
+      bad: PropTypes.number.isRequired,
+    }),
+    positiveFeed: PropTypes.number,
+  };
   render() {
     const { state } = this.props;
     const total = this.props.total;

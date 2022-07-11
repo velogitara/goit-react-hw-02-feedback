@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Section from './Section';
+// import PropTypes from 'prop-types';
 
 class App extends Component {
   state = {
